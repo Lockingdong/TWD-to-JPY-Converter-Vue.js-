@@ -1,0 +1,27 @@
+#app(class="{{is_TWDtoJPY?'blue':'pink'}}")
+  .dlr
+    .rate 
+      span.n 1
+      span.tw TWD 
+      span.e = 
+      input(v-model="TWD_JPY")
+      span.j JPY
+    .TWDtoJPY(v-if="is_TWDtoJPY")
+      .TW {{TWD}} 
+        span TWD
+      .middle ▼
+      .toJP {{toJPY}} 
+        span JPY
+        
+    
+    .JPYtoTWD(v-if="!is_TWDtoJPY")
+      .JP {{JPY}} 
+        span JPY
+      .middle ▼
+      .toTW {{toTWD}} 
+        span TWD
+  .number(@click="add(number)" v-for="number in numbers") {{number}}
+  .cancel(v-on:click="remove()") C
+  .switch
+    label switch
+      input(type="checkbox" v-model="is_TWDtoJPY" value="true")

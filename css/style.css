@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+#app {
+  margin-top: 20px !important;
+  width: 50%;
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 0;
+}
+#app .middle {
+  text-align: right;
+  font-size: 20px !important;
+  line-height: 45px;
+  margin: 10px 0;
+}
+#app .dlr {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.15);
+  letter-spacing: 1px;
+}
+#app .dlr .rate {
+  position: absolute;
+  padding-left: 10px;
+  top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+#app .dlr .rate .n {
+  font-size: 10px;
+  padding-right: 2px;
+}
+#app .dlr .rate .tw {
+  font-size: 10px;
+}
+#app .dlr .rate .e {
+  vertical-align: 0px;
+}
+#app .dlr .rate .j {
+  font-size: 10px;
+}
+#app .dlr .rate input {
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 2px 5px;
+}
+#app .dlr .rate .j {
+  padding-left: 5px;
+}
+#app .dlr span {
+  font-size: 15px;
+  vertical-align: middle;
+}
+#app .dlr .TWDtoJPY div, #app .dlr .JPYtoTWD div {
+  height: 30px;
+  padding: 5px 20px;
+  font-size: 35px;
+}
+#app div, #app label {
+  font-size: initial;
+}
+#app .TW, #app .JP {
+  text-align: right;
+}
+#app .toTW, #app .toJP {
+  text-align: right;
+}
+#app .number {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 33.3%;
+  display: inline-block;
+  font-size: initial;
+}
+#app .number:nth-child(11) {
+  width: 66.6%;
+}
+#app .cancel {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33.3%;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  font-size: 25px;
+}
+#app .number, #app .cancel {
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  vertical-align: middle;
+}
+#app .switch {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+  width: 99.7%;
+  text-align: center;
+  padding: 15px 0;
+}
+#app .switch:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+#app .switch label {
+  width: 100%;
+  width: 100%;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+}
+#app .switch input {
+  display: none;
+}
+
+.blue {
+  background: linear-gradient(30deg, #b2fefa, #0ed2f7);
+  transition: 0.5s;
+}
+
+.pink {
+  background: linear-gradient(30deg, #e29587, #d66d75);
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .rate {
+    top: 27px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #app {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}

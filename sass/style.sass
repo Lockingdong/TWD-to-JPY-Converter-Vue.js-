@@ -1,0 +1,121 @@
+*
+  //border: 1px solid #000
+  font-family: 微軟正黑體
+  //background-color: #f5f5f5
+html, body
+  padding: 0
+  margin: 0
+  background-color: #333
+#app
+  margin-top: 20px !important
+  width: 50%
+  max-width: 768px
+  margin: 0 auto
+  font-size: 0
+  //transition: background 0.5s
+  .middle
+    text-align: right
+    font-size: 20px !important
+    line-height: 45px
+    margin: 10px 0
+  .dlr
+    color: rgba(#fff, 0.9)
+    padding: 30px 0
+    background: rgba(black, 0.15)
+    letter-spacing: 1px
+    .rate
+      position: absolute
+      padding-left: 10px
+      top: 10px
+      color: rgba(#fff, 0.9)
+      .n
+        font-size: 10px
+        padding-right: 2px
+      .tw
+        font-size: 10px
+      .e
+        vertical-align: 0px
+      .j
+        font-size: 10px
+      input
+        vertical-align: middle
+        background: rgba(white, 0.8)
+        border-radius: 5px
+        border: none
+        //border-bottom: 1px solid rgba(black, 0.8)
+        width: 50px
+        color: rgba(black, 0.8)
+        text-align: center
+        padding: 2px 5px
+      .j
+        padding-left: 5px
+    span
+      font-size: 15px
+      vertical-align: middle
+    .TWDtoJPY, .JPYtoTWD
+      div
+        height: 30px
+        padding: 5px 20px
+        font-size: 35px
+      //height: 100px
+  div, label
+    font-size: initial
+  .TW, .JP
+    text-align: right
+  .toTW, .toJP
+    text-align: right
+  .number
+    border: 1px solid rgba(black, 0.2)
+    background: rgba(black, 0.15)
+    font-size: 25px !important
+    color: rgba(black, 0.6)
+    font-weight: bold
+    box-sizing: border-box
+    width: 33.3%
+    display: inline-block
+    font-size: initial
+  .number:nth-child(11)
+    width: 66.6%
+  .cancel
+    border: 1px solid rgba(black, 0.2)
+    box-sizing: border-box
+    display: inline-block
+    width: 33.3%
+    color: rgba(black, 0.6)
+    background: rgba(black, 0.15)
+    font-weight: bold
+    font-size: 25px
+  .number, .cancel
+    height: 90px
+    text-align: center
+    line-height: 90px
+    vertical-align: middle
+  .switch
+    border: 1px solid rgba(black, 0.2)
+    background: rgba(black, 0.4)
+    width: 99.7%
+    text-align: center
+    padding: 15px 0
+    &:hover
+      background: rgba(black, 0.6)
+    label
+      width: 100%
+      //border: 1px solid #000
+      width: 100%
+      display: inline-block
+      color: rgba(#fff, 0.9)
+    input
+      display: none
+.blue
+  background: linear-gradient(30deg, #b2fefa, #0ed2f7)
+  transition: 0.5s
+.pink
+  background: linear-gradient(30deg, #e29587, #d66d75)
+  transition: 0.5s
+@media screen and (min-width: 768px)
+  .rate
+    top: 27px !important
+@media screen and (max-width: 768px)
+  #app
+    margin: 0 !important
+    width: 100% !important

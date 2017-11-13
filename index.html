@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>TWD to JPY Converter(Vue.js)</title>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="{{is_TWDtoJPY?'blue':'pink'}}" id="app">
+  <div class="dlr">
+    <div class="rate"> <span class="n">1</span><span class="tw">TWD </span><span class="e">= </span>
+      <input v-model="TWD_JPY"/><span class="j">JPY</span>
+    </div>
+    <div class="TWDtoJPY" v-if="is_TWDtoJPY">
+      <div class="TW">{{TWD}} <span>TWD</span></div>
+      <div class="middle">▼</div>
+      <div class="toJP">{{toJPY}} <span>JPY</span></div>
+    </div>
+    <div class="JPYtoTWD" v-if="!is_TWDtoJPY">
+      <div class="JP">{{JPY}} <span>JPY</span></div>
+      <div class="middle">▼</div>
+      <div class="toTW">{{toTWD}} <span>TWD</span></div>
+    </div>
+  </div>
+  <div class="number" @click="add(number)" v-for="number in numbers">{{number}}</div>
+  <div class="cancel" v-on:click="remove()">C</div>
+  <div class="switch">
+    <label>switch
+      <input type="checkbox" v-model="is_TWDtoJPY" value="true"/>
+    </label>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
